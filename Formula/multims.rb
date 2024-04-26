@@ -5,50 +5,58 @@
 class Multims < Formula
   desc "How engineers learn about CLIs"
   homepage "https://github.com/JACKT72xp/cli"
-  version "1.0.20"
+  version "1.0.21"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.20/multims_1.0.20_darwin_amd64.tar.gz"
-      sha256 "1f6c5a7430f4d930745eadf1c3ec730b2b4351da30f676362a45431929e541f7"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.21/multims_1.0.21_darwin_amd64.tar.gz"
+      sha256 "0905deb4b88253c300247950a1141ebd84359a980a2c5310d0a61d7efe98ac0f"
 
       def install
         bin.install "multims"
-        (etc/"multims").install "templates"
-        (pkgshare/"scripts").install Dir["scripts/*"]
+        (etc/"multims").mkpath
+        (etc/"multims/templates").install Dir["templates/*"]
+        (pkgshare/"multims/scripts").mkpath
+        (pkgshare/"multims/scripts").install Dir["scripts/*"]
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.20/multims_1.0.20_darwin_arm64.tar.gz"
-      sha256 "c93b812fae27ac644c80b4c4e505e5530a24661f362b2a2e0a646cc0f4294e42"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.21/multims_1.0.21_darwin_arm64.tar.gz"
+      sha256 "7a009aa1a6e8ac7c2f462656666b6749fb3c29279994a3dffe92e52b330f5f3b"
 
       def install
         bin.install "multims"
-        (etc/"multims").install "templates"
-        (pkgshare/"scripts").install Dir["scripts/*"]
+        (etc/"multims").mkpath
+        (etc/"multims/templates").install Dir["templates/*"]
+        (pkgshare/"multims/scripts").mkpath
+        (pkgshare/"multims/scripts").install Dir["scripts/*"]
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.20/multims_1.0.20_linux_amd64.tar.gz"
-      sha256 "166d5650ce8f5ddb395d7a8226aa43d9d8f9c72927e71673030dc283375a4418"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.21/multims_1.0.21_linux_amd64.tar.gz"
+      sha256 "b9603bc7001404a15e41d5a448f18e23000b3ac04f1ac0c582363a355788795e"
 
       def install
         bin.install "multims"
-        (etc/"multims").install "templates"
-        (pkgshare/"scripts").install Dir["scripts/*"]
+        (etc/"multims").mkpath
+        (etc/"multims/templates").install Dir["templates/*"]
+        (pkgshare/"multims/scripts").mkpath
+        (pkgshare/"multims/scripts").install Dir["scripts/*"]
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.20/multims_1.0.20_linux_arm64.tar.gz"
-      sha256 "32e2ee05db3edb7fdf2d2fd3412c134ccc500b33ff6435beab03ca1d82bb0c4f"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.21/multims_1.0.21_linux_arm64.tar.gz"
+      sha256 "821195586e81328ccab7c4e6f990aea8cc37013e0fd42c87f65808a98fb06a95"
 
       def install
         bin.install "multims"
-        (etc/"multims").install "templates"
-        (pkgshare/"scripts").install Dir["scripts/*"]
+        (etc/"multims").mkpath
+        (etc/"multims/templates").install Dir["templates/*"]
+        (pkgshare/"multims/scripts").mkpath
+        (pkgshare/"multims/scripts").install Dir["scripts/*"]
       end
     end
   end
@@ -56,7 +64,7 @@ class Multims < Formula
   def caveats
     <<~EOS
       Templates are located in #{etc/"multims/templates"}.
-      Scripts are located in #{pkgshare/"scripts"}.
+      Scripts are located in #{pkgshare/"multims/scripts"}.
     EOS
   end
 end
