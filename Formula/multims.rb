@@ -5,12 +5,12 @@
 class Multims < Formula
   desc "How engineers learn about CLIs"
   homepage "https://github.com/JACKT72xp/cli"
-  version "1.0.31"
+  version "1.0.32"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.31/multims_1.0.31_darwin_amd64.tar.gz"
-      sha256 "573b1b9b1367aa6bc3d826d207644b09112bc9d9b4b577c685b8e2e1b1bfaf70"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.32/multims_1.0.32_darwin_amd64.tar.gz"
+      sha256 "54d7ad7a287cb5ff74f8f834d0320bc7000d9d331720fe5cc4de511ccd0764aa"
 
       def install
         bin.install "multims"
@@ -20,8 +20,8 @@ class Multims < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.31/multims_1.0.31_darwin_arm64.tar.gz"
-      sha256 "7b739e07d45bec8841ea841c1a1f044889519d8eef2c3d76f72be04aed702bd9"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.32/multims_1.0.32_darwin_arm64.tar.gz"
+      sha256 "c15ea172ef180f0181120808633b54dd94800641dba5da31df0c390c9902d7ab"
 
       def install
         bin.install "multims"
@@ -34,8 +34,8 @@ class Multims < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.31/multims_1.0.31_linux_amd64.tar.gz"
-      sha256 "a3a2be082a17b49ab7ec3e0b2b827b10209475523c78dd80a80648e006244c54"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.32/multims_1.0.32_linux_amd64.tar.gz"
+      sha256 "b294b9f41dfcd143ce145d554e7248e79730560858765e276d74f59ec29d6170"
 
       def install
         bin.install "multims"
@@ -45,8 +45,8 @@ class Multims < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.31/multims_1.0.31_linux_arm64.tar.gz"
-      sha256 "4095589565f476d7912fb2578c65b9ea7064f8b162db6a2c929bd92797ce7d97"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.32/multims_1.0.32_linux_arm64.tar.gz"
+      sha256 "8390ca8c05188c5f0e1223b827be29b3c8c997f6cf06e3b8583a79f8e5211e87"
 
       def install
         bin.install "multims"
