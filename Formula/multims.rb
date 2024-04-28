@@ -5,12 +5,12 @@
 class Multims < Formula
   desc "How engineers learn about CLIs"
   homepage "https://github.com/JACKT72xp/cli"
-  version "1.0.45"
+  version "1.0.46"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.45/multims_1.0.45_darwin_amd64.tar.gz"
-      sha256 "a4f056e88a2879077edb38aa9cdb37acfc78792f37c3fc116b7c6d285477d68a"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.46/multims_1.0.46_darwin_amd64.tar.gz"
+      sha256 "83fb15eb76a44f583595cc0d37d0917e1cb521710fd96b6029011480558dd78d"
 
       def install
         bin.install "multims"
@@ -20,8 +20,8 @@ class Multims < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.45/multims_1.0.45_darwin_arm64.tar.gz"
-      sha256 "8fa55ce3ff973c529708bddf8b35cdcc8c6cf82636e6303a7638c6830904fd1d"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.46/multims_1.0.46_darwin_arm64.tar.gz"
+      sha256 "9ab7bb0379e4e21b2f2c0ffedba3e9a2b404543ac8c166694b503bb6c1bca0a3"
 
       def install
         bin.install "multims"
@@ -34,8 +34,8 @@ class Multims < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.45/multims_1.0.45_linux_amd64.tar.gz"
-      sha256 "2d4ef1cfebfba2e27b5d52d8d2522e16f8b2ff9d0c7634f9d7c80ccac3daf086"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.46/multims_1.0.46_linux_amd64.tar.gz"
+      sha256 "7beba49bed28230de491d4955d2a7c9ccc49bef2bdc4dea69d5cbcd11fc93b5a"
 
       def install
         bin.install "multims"
@@ -45,8 +45,8 @@ class Multims < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.45/multims_1.0.45_linux_arm64.tar.gz"
-      sha256 "9cc8f3435478a633ef63ed5826ae2cb0f80fea687f47320f946a8a431d0b3580"
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.0.46/multims_1.0.46_linux_arm64.tar.gz"
+      sha256 "4b8bf840c3b56a9cc20a05a9f5c9ea707a4bf15203855e2fcc596b30b2dde56a"
 
       def install
         bin.install "multims"
@@ -61,6 +61,7 @@ class Multims < Formula
     <<~EOS
       Templates are located in #{etc/"multims/templates"}.
       Scripts are located in #{etc/"multims/scripts"}.
+      Make sure fswatch is installed by running `brew install fswatch`.
     EOS
   end
 end
