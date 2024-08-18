@@ -1,12 +1,12 @@
 class Multims < Formula
   desc "Multims is a tool for managing and syncing Kubernetes configurations"
   homepage "https://github.com/JACKT72xp/multims"
-  version "1.5.12"
+  version "1.5.14"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.12/multims_darwin_arm64"
-      sha256 "55c6cdc99f9c876c57f22aa43955b2fedb5cb10740354f588a700048559450b2"  # Reemplaza con el valor SHA256 correcto para multims_darwin_arm64
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.14/multims_darwin_arm64"
+      sha256 "267d98bb7a8bdfb327de56e843307d42ead8d00a4568224562036405e827542f"  # Reemplaza con el valor SHA256 correcto para multims_darwin_arm64
 
       def install
         bin.install "multims_darwin_arm64" => "multims"
@@ -14,8 +14,8 @@ class Multims < Formula
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.12/multims_darwin_amd64"
-      sha256 "9c8fdfe2e6fdb2680d22918156e065f29f3e43967e48dd6b600e35173f94390f"  # Reemplaza con el valor SHA256 correcto para multims_darwin_amd64
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.14/multims_darwin_amd64"
+      sha256 "70f3e411d48f65ec136658e465055ea59be36c2cad15215b3274b8517b111966"  # Reemplaza con el valor SHA256 correcto para multims_darwin_amd64
 
       def install
         bin.install "multims_darwin_amd64" => "multims"
@@ -25,8 +25,8 @@ class Multims < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.12/multims_linux_arm64"
-      sha256 "c5a81688fe2a40875c7c889762a78efe68328e73c355cf7b3675150e74bf385a"  # Reemplaza con el valor SHA256 correcto para multims_linux_arm64
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.14/multims_linux_arm64"
+      sha256 "4bfd33bd146fcc032cdc7be23bdc3797a9f3a7c294d5b1220c91a88b7dc22aa9"  # Reemplaza con el valor SHA256 correcto para multims_linux_arm64
 
       def install
         bin.install "multims_linux_arm64" => "multims"
@@ -34,8 +34,8 @@ class Multims < Formula
     end
 
     if Hardware::CPU.intel?
-      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.12/multims_linux_amd64"
-      sha256 "63627da7d62cfeb9e9ac26b07f782612e9dc346232575931ff60b281227001f8"  # Reemplaza con el valor SHA256 correcto para multims_linux_amd64
+      url "https://github.com/JACKT72xp/multims/releases/download/v1.5.14/multims_linux_amd64"
+      sha256 "0753af098b1fe692041efa6b5984656ffe2ffbc2056e4f6b96b4fe402ff6d94f"  # Reemplaza con el valor SHA256 correcto para multims_linux_amd64
 
       def install
         bin.install "multims_linux_amd64" => "multims"
