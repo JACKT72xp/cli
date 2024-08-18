@@ -1,7 +1,7 @@
 class Multims < Formula
   desc "Multims is a tool for managing and syncing Kubernetes configurations"
   homepage "https://github.com/JACKT72xp/multims"
-  version "1.5.4"
+  version "1.5.11"
 
   on_macos do
     if Hardware::CPU.arm?
