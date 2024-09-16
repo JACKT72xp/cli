@@ -47,3 +47,7 @@ class Multims < Formula
     system "#{bin}/multims", "--version"
   end
 end
+livecheck do
+  url :stable
+  strategy :github_latest
+end
