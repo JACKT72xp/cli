@@ -1,12 +1,12 @@
 class Multims < Formula
   desc "Tool for managing and syncing Kubernetes configurations"
   homepage "https://github.com/JACKT72xp/multims"
-  version "1.6.43"
+  version "1.6.44"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/JACKT72xp/multims/releases/download/v#{version}/multims_darwin_arm64"
-      sha256 "16b28900e68106c065ba995715291d2b5a32f70f313400477334733243b8ec8e"
+      sha256 "2d871de5eddf5d93025c107bd107b0fb754109cb7732a562ee0784b73f5ec647"
 
       def install
         bin.install "multims_darwin_arm64" => "multims"
@@ -15,7 +15,7 @@ class Multims < Formula
 
     if Hardware::CPU.intel?
       url "https://github.com/JACKT72xp/multims/releases/download/v#{version}/multims_darwin_amd64"
-      sha256 "db8b6a7fefad19239466a081bf2973e5d505b8b8e941817d71a9e2a43d43982f"
+      sha256 "1750b7736800e20bff3f4a3eeab212c495577b907ea36928bddf161ae9c280a4"
 
       def install
         bin.install "multims_darwin_amd64" => "multims"
@@ -26,7 +26,7 @@ class Multims < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/JACKT72xp/multims/releases/download/v#{version}/multims_linux_arm64"
-      sha256 "1488d4bf192bb10911bf69f80f533e1a6f5a0a3239f99f3b93f4b43a66c68ded"
+      sha256 "e3a844cb91f9e1e5378fcb68d219d4891f7cdc5b846579943d3f727b7d7eecfa"
 
       def install
         bin.install "multims_linux_arm64" => "multims"
@@ -35,7 +35,7 @@ class Multims < Formula
 
     if Hardware::CPU.intel?
       url "https://github.com/JACKT72xp/multims/releases/download/v#{version}/multims_linux_amd64"
-      sha256 "43786d1355634d23bbd938d87cd791b1b727b8834969868e278b62905e623ffa"
+      sha256 "be68eecefaa6f69f8da8ed39c74387cd5c249cb2565da4ee3c680facf9a7ef14"
 
       def install
         bin.install "multims_linux_amd64" => "multims"
