@@ -1,7 +1,7 @@
 class Multims < Formula
   desc "Tool for managing and syncing Kubernetes configurations"
   homepage "https://github.com/JACKT72xp/multims"
-  version "1.6.51"
+  version "1.6.52"
 
   on_macos do
     if Hardware::CPU.arm?
