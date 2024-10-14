@@ -48,8 +48,6 @@ class Multims < Formula
     strategy :github_latest
   end
   # Define el archivo plist dentro de la fórmula
-  plist_options manual: "multims ui"
-
   def plist
     <<~EOS
       <?xml version="1.0" encoding="UTF-8"?>
